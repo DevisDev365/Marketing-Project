@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Tape [X] Anime Collection — Conceptual Marketing Campaign</title>
+    <meta name="description" content="A conceptual marketing campaign showcasing Red Tape's potential anime sneaker collaboration. Personal portfolio project by Devansh Khanna.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Bebas+Neue&family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ═══════════════ DISCLAIMER POP-UP ═══════════════ -->
+    <div id="disclaimer-overlay" class="disclaimer-overlay">
+        <div class="disclaimer-modal">
+            <div class="disclaimer-glow"></div>
+            <div class="disclaimer-icon">⚠️</div>
+            <h2 class="disclaimer-title">DISCLAIMER</h2>
+            <p class="disclaimer-text">
+                This is a <strong>demo website</strong> created as a <strong>personal portfolio project</strong>. 
+                It does <strong>not</strong> represent the Red Tape brand, its products, or any official collaboration. 
+                All designs shown are <strong>AI-generated concepts</strong> for educational and showcase purposes only.
+            </p>
+            <div class="disclaimer-timer">
+                <div class="timer-bar" id="timer-bar"></div>
+            </div>
+            <button id="disclaimer-btn" class="disclaimer-btn" disabled>
+                <span id="btn-text">Please wait <span id="countdown">5</span>s</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ═══════════════ CANVAS FOR PARTICLES ═══════════════ -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- ═══════════════ NAVIGATION ═══════════════ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-red">RED TAPE</span>
+                <span class="logo-x">[X]</span>
+            </a>
+            <div class="nav-badge">Conceptual Marketing Campaign</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#collection" class="nav-link">Collection</a></li>
+                <li><a href="#story" class="nav-link">The Story</a></li>
+                <li><a href="#stats" class="nav-link">Market Data</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ═══════════════ HERO SECTION ═══════════════ -->
+    <section class="hero" id="home">
+        <div class="hero-video-bg">
+            <video autoplay muted loop playsinline id="hero-video">
+                <source src="../For the Hero section.mp4" type="video/mp4">
+            </video>
+            <div class="hero-video-overlay"></div>
+        </div>
+        <div class="hero-bg-lines"></div>
+        <div class="hero-content">
+            <div class="hero-label anim-fade-up">PERSONAL PORTFOLIO PROJECT</div>
+            <h1 class="hero-title">
+                <span class="title-line anim-slide-right" data-delay="0.2">
+                    <span class="text-red">RED TAPE</span>
+                </span>
+                <span class="title-line anim-slide-left" data-delay="0.5">
+                    <span class="text-glow">[X]</span>
+                </span>
+                <span class="title-line anim-slide-right" data-delay="0.8">
+                    <span class="text-outline">ANIME</span>
+                </span>
+                <span class="title-line anim-slide-left" data-delay="1.1">
+                    <span class="text-fill">COLLECTION</span>
+                </span>
+            </h1>
+            <p class="hero-subtitle anim-fade-up" data-delay="1.5">
+                7 Legendary Designs. 7 Iconic Anime. One Collection That Changes Everything.
+            </p>
+            <div class="hero-cta anim-fade-up" data-delay="1.8">
+                <a href="#collection" class="btn-primary">
+                    <span>Explore Collection</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </a>
+                <a href="#story" class="btn-secondary">The Story Behind</a>
+            </div>
+            <div class="hero-scroll-indicator anim-fade-up" data-delay="2.2">
+                <div class="scroll-line"></div>
+                <span>Scroll to Explore</span>
+            </div>
+        </div>
+        <div class="hero-side-text">WEAR YOUR POWER</div>
+    </section>
+
+    <!-- ═══════════════ COLLECTION INTRO ═══════════════ -->
+    <section class="section-intro" id="collection">
+        <div class="container">
+            <div class="section-header anim-reveal">
+                <span class="section-tag">THE LINEUP</span>
+                <h2 class="section-title">7 Characters. 7 Designs.<br><span class="text-red">One Legendary Collection.</span></h2>
+                <p class="section-desc">Each shoe is crafted with love for the anime that defined a generation. From the Hidden Leaf Village to the Survey Corps — step into your arc.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ PRODUCT SHOWCASE — ALL 8 IMAGES ═══════════════ -->
+
+    <!-- Product 0: Overview -->
+    <section class="product-section" data-theme="overview">
+        <div class="product-container">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../WhatsApp Image 2026-03-11 at 17.18.45.jpeg" alt="Red Tape X Anime — Full Collection Overview" class="product-image" loading="lazy">
+                <div class="image-glow"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-tag">FULL COLLECTION</span>
+                <h2 class="product-name">The Complete<br><span class="text-accent">Red Tape [X]</span> Lineup</h2>
+                <p class="product-desc">8 character-inspired sneakers spanning the most iconic anime universes. From Naruto's sage orange to Solo Leveling's shadow purple — every shoe tells a story. Every step is a new episode.</p>
+                <div class="product-features">
+                    <div class="feature">
+                        <span class="feature-number">7</span>
+                        <span class="feature-label">Anime Universes</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-number">8</span>
+                        <span class="feature-label">Unique Designs</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-number">∞</span>
+                        <span class="feature-label">Main Character Energy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 1: Naruto -->
+    <section class="product-section" data-theme="naruto">
+        <div class="product-container reverse">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../Naruto.png" alt="Red Tape X Naruto Sage Mode Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #FF6B00;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">01</span>
+                <span class="product-tag" style="--tag-color: #FF6B00;">NARUTO</span>
+                <h2 class="product-name">"Sage Mode"<br><span class="text-accent" style="--accent: #FF6B00;">Edition</span></h2>
+                <p class="product-desc">Channel the power of the Nine-Tails with these orange & black high-tops. Konoha leaf emblem on heel, toad sage embossing on leather panels, and kanji "仙" (Sage) on the tongue. The sole features a toad summoning chakra pattern.</p>
+                <blockquote class="product-quote">"Believe it."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 2: Attack on Titan -->
+    <section class="product-section" data-theme="aot">
+        <div class="product-container">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../Attack On titan.jpeg" alt="Red Tape X Attack on Titan 3DMGear Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #4A7C59;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">02</span>
+                <span class="product-tag" style="--tag-color: #4A7C59;">ATTACK ON TITAN</span>
+                <h2 class="product-name">"3DMGear"<br><span class="text-accent" style="--accent: #4A7C59;">Edition</span></h2>
+                <p class="product-desc">Built for soldiers. Military green & tan rugged mid-top with Survey Corps "Wings of Freedom" crest on heel. Mechanical gear embossing and "Wings of Freedom" engraved outsole — dedicated to those who fight for freedom.</p>
+                <blockquote class="product-quote">"Dedicate your heart."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 3: My Hero Academia -->
+    <section class="product-section" data-theme="mha">
+        <div class="product-container reverse">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../my hero academia.jpeg" alt="Red Tape X My Hero Academia Plus Ultra Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #00C853;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">03</span>
+                <span class="product-tag" style="--tag-color: #00C853;">MY HERO ACADEMIA</span>
+                <h2 class="product-name">"Plus Ultra!"<br><span class="text-accent" style="--accent: #00C853;">Edition</span></h2>
+                <p class="product-desc">Go beyond your limits. Green & red high-tops inspired by Deku's hero costume with "PLUS ULTRA!" on the tongue strap, lightning energy effect design elements, and UA Academy logo on the insole.</p>
+                <blockquote class="product-quote">"Go beyond. Plus Ultra!"</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 4: One Piece -->
+    <section class="product-section" data-theme="onepiece">
+        <div class="product-container">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../One piece.jpeg" alt="Red Tape X One Piece Straw Hat Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #B71C1C;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">04</span>
+                <span class="product-tag" style="--tag-color: #B71C1C;">ONE PIECE</span>
+                <h2 class="product-name">"Straw Hat"<br><span class="text-accent" style="--accent: #B71C1C;">Edition</span></h2>
+                <p class="product-desc">Set sail with the future Pirate King. Crimson red leather with gold accents, Straw Hat Pirates skull & crossbones emblem, anchor detail on heel, Monkey D. Luffy signature on tongue, and dragon scale texture on the toe box.</p>
+                <blockquote class="product-quote">"I'm gonna be King of the Pirates!"</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 5: Solo Leveling -->
+    <section class="product-section" data-theme="sololeveling">
+        <div class="product-container reverse">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../Solo leveling.jpeg" alt="Red Tape X Solo Leveling Shadow Monarch Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #7B1FA2;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">05</span>
+                <span class="product-tag" style="--tag-color: #7B1FA2;">SOLO LEVELING</span>
+                <h2 class="product-name">"Shadow Monarch"<br><span class="text-accent" style="--accent: #7B1FA2;">Edition</span></h2>
+                <p class="product-desc">Rise from the shadows. All-black with purple holographic accents, "Awakened" tag on side panel, shadow soldier patterns on upper, "Quest: Shadow Monarch" on insole, and a purple energy glow on the outsole.</p>
+                <blockquote class="product-quote">"Arise."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 6: Jujutsu Kaisen -->
+    <section class="product-section" data-theme="jjk">
+        <div class="product-container">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../Jujutsu kaisen.jpeg" alt="Red Tape X Jujutsu Kaisen Six Eyes Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #5C6BC0;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">06</span>
+                <span class="product-tag" style="--tag-color: #5C6BC0;">JUJUTSU KAISEN</span>
+                <h2 class="product-name">"Six Eyes"<br><span class="text-accent" style="--accent: #5C6BC0;">Edition</span></h2>
+                <p class="product-desc">Throughout Heaven and Earth, I Alone Am the Honored One. Cosmic purple, black and blue design with Gojo's "Six Eyes" detail, "Unlimited Void" engraved on sole, and galaxy swirl pattern on transparent outsole.</p>
+                <blockquote class="product-quote">"Domain Expansion: Unlimited Void."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product 7: Chainsaw Man -->
+    <section class="product-section" data-theme="chainsawman">
+        <div class="product-container reverse">
+            <div class="product-image-wrap anim-reveal-image">
+                <img src="../ChainSaw Man.png" alt="Red Tape X Chainsaw Man Devil Hunter Edition" class="product-image" loading="lazy">
+                <div class="image-glow" style="--glow-color: #FF6D00;"></div>
+            </div>
+            <div class="product-info anim-reveal">
+                <span class="product-number">07</span>
+                <span class="product-tag" style="--tag-color: #FF6D00;">CHAINSAW MAN</span>
+                <h2 class="product-name">"Devil Hunter"<br><span class="text-accent" style="--accent: #FF6D00;">Edition</span></h2>
+                <p class="product-desc">Rev the chainsaw. Blood-red and metallic black leather with ripcord detail on the heel, chainsaw teeth pattern on the outsole, Pochita emblem on the tongue, and devil contract sigils on the side panels. For those who made a deal with the devil.</p>
+                <blockquote class="product-quote">"This is the taste of a devil hunter's life."</blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ THE STORY SECTION ═══════════════ -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <div class="section-header anim-reveal">
+                <span class="section-tag">THE STORY</span>
+                <h2 class="section-title">Why Red Tape Needs<br><span class="text-red">An Anime Collection</span></h2>
+            </div>
+            <div class="story-grid">
+                <div class="story-card anim-reveal" data-delay="0.1">
+                    <div class="story-card-number">01</div>
+                    <h3>The Problem</h3>
+                    <p>Anime culture is exploding in India. "Anime shoes" searches hit an <strong>all-time high</strong> in Feb 2026 — 12.5x growth in 5 years. Yet no Indian footwear brand serves this audience.</p>
+                </div>
+                <div class="story-card anim-reveal" data-delay="0.2">
+                    <div class="story-card-number">02</div>
+                    <h3>The Gap</h3>
+                    <p>Nike dominates anime shoe searches with a perfect score of 100. But at ₹8,000-15,000, most Indian Gen Z fans can't afford them. <strong>Red Tape is completely absent</strong> from this conversation.</p>
+                </div>
+                <div class="story-card anim-reveal" data-delay="0.3">
+                    <div class="story-card-number">03</div>
+                    <h3>The Opportunity</h3>
+                    <p>"Custom anime shoes" grew <strong>160%</strong> — fans are literally paying for hand-painted shoes because no affordable brand offers them. Character-specific shoes are all "Breakout" searches.</p>
+                </div>
+                <div class="story-card anim-reveal" data-delay="0.4">
+                    <div class="story-card-number">04</div>
+                    <h3>The Solution</h3>
+                    <p>Red Tape [X] — India's FIRST anime sneaker collection by a major Indian brand. Premium designs at ₹1,500-3,500. <strong>Affordable. Accessible. Authentic.</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ STATS SECTION ═══════════════ -->
+    <section class="stats-section" id="stats">
+        <div class="container">
+            <div class="section-header anim-reveal">
+                <span class="section-tag">MARKET DATA</span>
+                <h2 class="section-title">The Numbers<br><span class="text-red">Don't Lie</span></h2>
+                <p class="section-desc">Google Trends data, India, 2021–2026</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card anim-reveal" data-delay="0.1">
+                    <div class="stat-number" data-count="1250">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Growth in "Anime Shoes" searches</div>
+                    <div class="stat-detail">Score 8 → 100 (2021–2026)</div>
+                </div>
+                <div class="stat-card anim-reveal" data-delay="0.2">
+                    <div class="stat-number" data-count="160">0</div>
+                    <div class="stat-suffix">%</div>
+                    <div class="stat-label">Growth in "Custom Anime Shoes"</div>
+                    <div class="stat-detail">Fans want character-specific designs</div>
+                </div>
+                <div class="stat-card anim-reveal" data-delay="0.3">
+                    <div class="stat-number" data-count="100">0</div>
+                    <div class="stat-suffix">/100</div>
+                    <div class="stat-label">Nike's anime shoe search dominance</div>
+                    <div class="stat-detail">Perfect score — yet unaffordable</div>
+                </div>
+                <div class="stat-card anim-reveal" data-delay="0.4">
+                    <div class="stat-number" data-count="0">0</div>
+                    <div class="stat-suffix"></div>
+                    <div class="stat-label">Red Tape's presence in anime searches</div>
+                    <div class="stat-detail">Zero. That's the opportunity.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ CTA SECTION ═══════════════ -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content anim-reveal">
+                <h2 class="cta-title">Every Step is a<br><span class="text-glow">New Episode.</span></h2>
+                <p class="cta-text">This is Red Tape [X] — a conceptual campaign imagining what happens when India's favorite footwear brand meets the anime revolution.</p>
+                <div class="cta-tagline">WEAR YOUR POWER</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span class="logo-red">RED TAPE</span>
+                    <span class="logo-x">[X]</span>
+                </div>
+                <p class="footer-tagline">Step Into Your Arc.</p>
+            </div>
+            <div class="footer-disclaimer">
+                <p>⚠️ <strong>DISCLAIMER:</strong> This is a <strong>conceptual marketing campaign</strong> and <strong>personal portfolio project</strong> created by Devansh Khanna. 
+                It does <strong>not</strong> represent the Red Tape brand, its products, or any official collaboration. 
+                All shoe designs are <strong>AI-generated concepts</strong> created using Google Gemini for educational and showcase purposes only. 
+                No affiliation with Red Tape, or any anime franchise mentioned.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Devansh Khanna — Personal Portfolio Project</p>
+                <p>Designs generated with Google Gemini · Market data from Google Trends</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
